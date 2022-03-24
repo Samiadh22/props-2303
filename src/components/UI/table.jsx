@@ -3,6 +3,7 @@ import {Table} from 'react-bootstrap'
 import dateFormat from "dateformat";
 import CustomModals from "./modals";
 export default function CustomTable({Data}) { 
+    
   return (
     <div>
         <Table striped bordered hover>
@@ -28,7 +29,7 @@ export default function CustomTable({Data}) {
       <td>{Math.floor(Math.random() * el.password.length)}</td>
       <td>{dateFormat(el.created_At.$date, 'yyyy-mm-dd')}</td>
       <td>{el.roles[0].role}</td>
-      <td><CustomModals samia={el} Data={Data.filter(ele => el.roles[0].role !== ele.roles[0].role )}/></td>
+      <td><CustomModals samia={el}  Data={Data.filter(ele => el.roles[0].role !== ele.roles[0].role )}/></td>
     </tr>
       )} 
   </tbody>

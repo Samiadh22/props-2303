@@ -1,7 +1,7 @@
 import React from 'react'
 import {InputGroup,FormControl} from 'react-bootstrap'
 
-export default function Input({type, className, placeholder, label,defaultValue}) {
+export default function Input({type, className, placeholder, label,defaultValue,setFirstName}) {
   return (
     <div>
          <InputGroup className="mb-3">

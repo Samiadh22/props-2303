@@ -6,7 +6,10 @@ export default function CustomModals({samia,Data}) {
   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  
+    const [firstname,setFirstName] = useState(samia.firstname)
+    const alertHandler = () => {
+        alert(`Hello `)
+    }
     return (
       <>
     
@@ -30,7 +33,7 @@ export default function CustomModals({samia,Data}) {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="primary" onClick={alertHandler}>
               Save Changes
             </Button>
           </Modal.Footer>
